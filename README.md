@@ -3,16 +3,17 @@ This playground is used for sharing and testing components. Additionally, it is 
 
 ## Running locally with Python
 Python 3.10 or newer is required.
+- Create a virtual environment (Shift+cmd+p, then select `Python: Create Environment`)
 - Download and install Astral uv, instructions [here](https://docs.astral.sh/uv/getting-started/installation/)
-- Create a virtual environment and install the dependencies
-```bash
-uv sync
-```
+- Install the dependencies
+    ```bash
+    uv sync
+    ```
 - Create a `.env` file and add the environment variables, see `.env.example` for reference
 - Run the Langflow application
-```bash
-uv run langflow run --env-file .env
-```
+    ```bash
+    uv run langflow run --env-file .env
+    ```
 
 ## Running locally with Docker
 The docker compose file will start a Langflow instance and a Postgres database for storing the data.
